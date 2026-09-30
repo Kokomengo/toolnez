@@ -1,6 +1,5 @@
 # ads.txt - Authorized Digital Sellers (IAB Tech Lab)
 # Required so programmatic advertising pays out correctly.
 # Vercel serves it as-is from the root: https://toolnez.vercel.app/ads.txt
-# Replace pub-0000000000000000 with your AdSense publisher ID (WITHOUT the "ca-" prefix).
 
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-2170099684772121, DIRECT, f08c47fec0942fa0
