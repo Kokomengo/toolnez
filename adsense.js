@@ -2,7 +2,7 @@
    adsense.js - THE ONLY FILE YOU NEED TO EDIT TO TURN ADS ON
    ----------------------------------------------------------------------------
    1. Put your publisher ID in `client` (you find it in AdSense under
-      Account > Settings > Account information: ca-pub-0000000000000000).
+      Account > Settings > Account information: ca-pub-2170099684772121).
    2. Leave `autoAds: true` to let Google place ads automatically, and/or fill
       in the four slot IDs below once you have created the ad units.
    3. Copy the same publisher ID into ads.txt.
@@ -14,7 +14,7 @@
 window.ADSENSE = {
 
   /* Your AdSense publisher ID. Replace the zeros. */
-  client: 'ca-pub-0000000000000000',
+  client: 'ca-pub-2170099684772121',
 
   /* Auto ads: Google decides where to insert extra ads. Needs no slot IDs.
      Turn it off if you only want the four positions designed below. */
