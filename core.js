@@ -188,6 +188,9 @@ window.ToolNez = (() => {
   }
   function ad(size = 'm', hint = '') {
     const unit = adUnit(size);
+    /* Live but this position has no slot ID yet: render nothing, so the public
+       site never shows empty boxes. Auto ads still fill the page. */
+    if (!unit && AD_LIVE) return '';
     return `<div class="ad ad-${size}${unit ? ' live' : ''}">
       ${unit}
       ${unit ? '' : `<div class="slot">Ad space${hint ? ' \u00b7 ' + hint : ''}</div>`}
@@ -317,6 +320,7 @@ window.ToolNez = (() => {
             <a class="side-link" href="#/c/${t.cat}" data-link>${icon('stack')}See all</a>
           </div>
           ${(() => { const u = adUnit('side', 'vertical');
+            if (!u && AD_LIVE) return '';
             return `<div class="ad ad-side${u ? ' live' : ''}">${u || '<div class="slot">Ad space &middot; 300&times;600</div>'}</div>`; })()}
         </aside>
       </div>
