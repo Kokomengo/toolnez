@@ -1,0 +1,85 @@
+# ToolNez
+
+> A collection of 36 free web tools: image conversion and editing, video trimming and
+> compression, PDF building and reading, text utilities, everyday calculators and developer helpers.
+> No sign-up, no watermarks and no usage limits.
+
+The site is a single-page application with fragment routing (#). The home page is https://toolnez.vercel.app/
+and each tool lives at https://toolnez.vercel.app/#/t/{id}. The content is in English.
+
+## How it works
+
+- No backend: there is no API and no database.
+- Only external dependency: pdf.js (Apache 2.0), loaded on demand in the tools that read PDFs.
+- The PDF, GIF and ZIP writers are own implementations bundled in lib.js.
+- Video is re-encoded in real time with MediaRecorder, so the job takes as long as the clip lasts.
+- Monetisation: Google AdSense advertising. There are no paid plans or subscription walls.
+
+## Calculators
+
+- [Age calculator](https://toolnez.vercel.app/#/t/age-calculator): Years, months, days lived and how long until the next birthday.
+- [Body mass index](https://toolnez.vercel.app/#/t/bmi): BMI, the healthy range, and what it actually tells you.
+- [Compound interest](https://toolnez.vercel.app/#/t/compound-interest): What happens if you put the same amount in every month for years.
+- [Loan payment](https://toolnez.vercel.app/#/t/loan-payment): Mortgage or personal loan, with the full amortisation table.
+- [Percentages](https://toolnez.vercel.app/#/t/percentage): The four percentage sums everybody ends up searching for.
+- [Rule of three](https://toolnez.vercel.app/#/t/rule-of-three): Direct or inverse, without having to remember which is which.
+- [Split the bill](https://toolnez.vercel.app/#/t/split-the-bill): Tip included, and what each person owes.
+- [Unit converter](https://toolnez.vercel.app/#/t/unit-converter): Metres, pounds, degrees, gigabytes and whatever else comes up.
+
+## Image
+
+- [Add a watermark](https://toolnez.vercel.app/#/t/add-watermark): Your text over the photo, at the opacity and corner you choose.
+- [Compress photos](https://toolnez.vercel.app/#/t/compress-image): Push the file size down to just before it shows.
+- [Convert images](https://toolnez.vercel.app/#/t/convert-image): PNG to JPG, to WebP, or the other way round. Many at once.
+- [Crop image](https://toolnez.vercel.app/#/t/crop-image): Drag the frame, or lock it to a fixed ratio.
+- [Generate favicons](https://toolnez.vercel.app/#/t/favicon): Every size a site asks for, bundled in a ZIP.
+- [Pull the colour palette](https://toolnez.vercel.app/#/t/color-palette): The dominant colours of a photo, in HEX and RGB.
+- [Remove objects from a photo](https://toolnez.vercel.app/#/t/remove-objects): Paint over whatever is in the way and the gap fills itself in.
+- [Resize image](https://toolnez.vercel.app/#/t/resize-image): Exact pixels or a percentage, with the ratio locked.
+
+## PDF
+
+- [Get the text out of a PDF](https://toolnez.vercel.app/#/t/pdf-to-text): Copy and paste without fighting the viewer.
+- [Images to PDF](https://toolnez.vercel.app/#/t/images-to-pdf): Loose photos or scans turned into one document.
+- [PDF to images](https://toolnez.vercel.app/#/t/pdf-to-images): Every page as a PNG, one by one or zipped.
+- [Text to PDF](https://toolnez.vercel.app/#/t/text-to-pdf): Paste some notes and take them away as a paginated PDF.
+
+## Text
+
+- [Change case](https://toolnez.vercel.app/#/t/change-case): Fix a headline someone typed in all caps, in two clicks.
+- [Clean up text](https://toolnez.vercel.app/#/t/clean-text): Duplicates, stray spaces, accents and odd line breaks.
+- [Markdown editor](https://toolnez.vercel.app/#/t/markdown-editor): Write on the left, watch it render on the right.
+- [Word count](https://toolnez.vercel.app/#/t/word-count): Words, characters and how long it takes to read.
+
+## Utilities
+
+- [Base64](https://toolnez.vercel.app/#/t/base64): Encode and decode text or small files.
+- [Hash calculator](https://toolnez.vercel.app/#/t/hash): SHA-256 and friends, from a piece of text or a file.
+- [JSON formatter](https://toolnez.vercel.app/#/t/json-formatter): Tidy it, minify it, and find where the error is.
+- [Password generator](https://toolnez.vercel.app/#/t/password-generator): Solid passwords and an honest meter of how long they hold up.
+- [Slug generator](https://toolnez.vercel.app/#/t/slug): Turn a headline into a clean URL.
+
+## Video
+
+- [Compress video](https://toolnez.vercel.app/#/t/compress-video): Drop the resolution and bitrate until it fits wherever it needs to go.
+- [Convert video](https://toolnez.vercel.app/#/t/convert-video): Move a clip to WebM or MP4 and set the frame rate.
+- [Cover an area in a video](https://toolnez.vercel.app/#/t/cover-video-area): Blur, pixelate or black out a rectangle for the whole clip.
+- [Extract frames](https://toolnez.vercel.app/#/t/video-frames): Turn the video into still images and grab them as a ZIP.
+- [Extract the audio](https://toolnez.vercel.app/#/t/extract-audio): Pull the sound out of a video as a WAV file.
+- [Trim video](https://toolnez.vercel.app/#/t/trim-video): Keep the part that matters and drop the rest.
+- [Video to GIF](https://toolnez.vercel.app/#/t/video-to-gif): A short clip turned into an animated GIF, with a hand-written encoder.
+
+## Information pages
+
+- [How it works](https://toolnez.vercel.app/#/p/how-it-works): technical detail of the APIs used and browser support.
+- [Changelog](https://toolnez.vercel.app/#/p/changelog): record of changes to the site.
+- [Privacy](https://toolnez.vercel.app/#/p/privacy): what is stored (preferences in localStorage) and how AdSense is used.
+- [Terms](https://toolnez.vercel.app/#/p/terms): the calculators are indicative and do not replace professional advice.
+- [Cookies and ads](https://toolnez.vercel.app/#/p/cookies): third-party cookies coming from advertising.
+- [Contact](https://toolnez.vercel.app/#/p/contact): elmillodel2029@gmail.com
+
+## Legitimate use
+
+The retouching tools (remove objects from a photo, cover an area in a video) are meant for your own
+material: removing a mark you added yourself, a burned-in camera date, an object in the way or visible
+personal data. They must not be used on third-party content protected by copyright.

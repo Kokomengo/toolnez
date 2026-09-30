@@ -1,0 +1,26 @@
+# ToolNez - https://toolnez.vercel.app
+# If you ever move to your own domain, change the URL here, in sitemap.xml,
+# in llms.txt and in the <link rel="canonical"> of index.html.
+
+User-agent: *
+Allow: /
+
+# Google's ad crawler (AdSense). It needs to read the page in order to pick
+# relevant ads; if you block it you will only get generic ones.
+User-agent: Mediapartners-Google
+Allow: /
+
+# AdsBot checks the quality of ad landing pages.
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# Google's crawler for images and video
+User-agent: Googlebot-Image
+Allow: /
+
+Disallow: /Unselected files/
+
+Sitemap: https://toolnez.vercel.app/sitemap.xml

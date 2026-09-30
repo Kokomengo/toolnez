@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ToolNez · Image, video and PDF tools that just work</title>
+<meta name="description" content="Convert and compress images, trim video, build PDFs, remove objects from photos, generate passwords and run everyday calculations. 36 free tools, no account needed.">
+<meta name="theme-color" content="#101418">
+<link rel="canonical" href="https://toolnez.vercel.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ToolNez">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://toolnez.vercel.app/">
+<meta property="og:title" content="ToolNez · Image, video and PDF tools that just work">
+<meta property="og:description" content="Image, video, PDF, text and calculators. 36 free tools, no sign-up, no watermarks.">
+<meta property="og:image" content="https://toolnez.vercel.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ToolNez · Image, video and PDF tools that just work">
+<meta name="twitter:description" content="Image, video, PDF, text and calculators. Free, fast and without an account.">
+<meta name="twitter:image" content="https://toolnez.vercel.app/og.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23111'/><path d='M9 20l4.5-9 4 6 2.5-3.5L23 20z' fill='%23e8a33d'/></svg>">
+
+<!-- Google AdSense: all configuration lives in adsense.js -->
+<script src="adsense.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="brand" href="#/" data-link aria-label="ToolNez, home">
+      <svg viewBox="0 0 32 32" class="mark" aria-hidden="true"><rect width="32" height="32" rx="9"/><path d="M8 21l5-10 4.4 6.6L20 13l4 8z"/></svg>
+      <span>Tool<em>Nez</em></span>
+    </a>
+
+    <div class="finder">
+      <svg viewBox="0 0 24 24" class="fico" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search: compress, trim video, BMI…" autocomplete="off" aria-label="Search tools">
+      <kbd>/</kbd>
+      <div id="qres" class="qres" role="listbox"></div>
+    </div>
+
+    <nav class="links" id="links">
+      <a href="#/c/image" data-link>Image</a>
+      <a href="#/c/video" data-link>Video</a>
+      <a href="#/c/pdf" data-link>PDF</a>
+      <a href="#/c/text" data-link>Text</a>
+      <a href="#/c/calc" data-link>Calculators</a>
+    </nav>
+
+    <button id="theme" class="ghost-btn" title="Switch theme" aria-label="Switch theme"></button>
+    <button id="burger" class="ghost-btn mob" aria-label="Menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="main"></main>
+
+<footer class="foot">
+  <div class="wrap fgrid">
+    <div>
+      <a class="brand" href="#/" data-link>
+        <svg viewBox="0 0 32 32" class="mark" aria-hidden="true"><rect width="32" height="32" rx="9"/><path d="M8 21l5-10 4.4 6.6L20 13l4 8z"/></svg>
+        <span>Tool<em>Nez</em></span>
+      </a>
+      <p class="dim">This started as a handful of scripts for the boring jobs nobody wants to do twice.
+      Today it is <b id="ntools">–</b> tools, still free and still without an account.</p>
+    </div>
+    <div><h4>Tools</h4>
+      <a href="#/c/image" data-link>Image</a><a href="#/c/video" data-link>Video</a><a href="#/c/pdf" data-link>PDF</a>
+      <a href="#/c/text" data-link>Text</a><a href="#/c/calc" data-link>Calculators</a><a href="#/c/util" data-link>Utilities</a>
+    </div>
+    <div><h4>The site</h4>
+      <a href="#/p/how-it-works" data-link>How it works</a>
+      <a href="#/p/changelog" data-link>What's new</a>
+      <a href="#/p/contact" data-link>Contact</a>
+    </div>
+    <div><h4>Legal</h4>
+      <a href="#/p/privacy" data-link>Privacy</a>
+      <a href="#/p/terms" data-link>Terms</a>
+      <a href="#/p/cookies" data-link>Cookies and ads</a>
+    </div>
+  </div>
+  <div class="wrap fbottom">
+    <span>© <span id="yr"></span> ToolNez</span>
+    <span class="dim">Built with HTML, CSS and a lot of JavaScript. No accounts, no watermarks.</span>
+  </div>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="lib.js"></script>
+<script src="core.js"></script>
+<script src="tools-media.js"></script>
+<script src="tools-docs.js"></script>
+<script src="tools-calc.js"></script>
+<script src="tools-retouch.js"></script>
+<script>ToolNez.start();</script>
+</body>
+</html>
